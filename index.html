@@ -10,77 +10,91 @@
 </head>
 
 <body>
+    <h1 class="container">Matrix Calculator</h1>
+    <div class="marg">
+        <div class="container">
 
-    <div class="container">
-        <div class="box1">
-            <div class="inner-box">
-                <input type="number" id="box1val1" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box1val2" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box1val3" placeholder="enter number" class="form-validator" />
+            <div class="box1">
+                <div class="inner-box">
+                    <input type="number" id="box1val1" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box1val2" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box1val3" placeholder="enter number" class="form-validator" />
+                </div>
+
+                <div class="inner-box">
+                    <input type="number" id="box1val4" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box1val5" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box1val6" placeholder="enter number" class="form-validator" />
+                </div>
+
+                <div class="inner-box">
+                    <input type="number" id="box1val7" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box1val8" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box1val9" placeholder="enter number" class="form-validator" />
+                </div>
             </div>
 
-            <div class="inner-box">
-                <input type="number" id="box1val4" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box1val5" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box1val6" placeholder="enter number" class="form-validator" />
+            <br>
+            <br>
+
+            <div class="box2">
+                <div class="inner-box">
+                    <input type="number" id="box2val1" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box2val2" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box2val3" placeholder="enter number" class="form-validator" />
+                </div>
+
+                <div class="inner-box">
+                    <input type="number" id="box2val4" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box2val5" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box2val6" placeholder="enter number" class="form-validator" />
+                </div>
+
+                <div class="inner-box">
+                    <input type="number" id="box2val7" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box2val8" placeholder="enter number" class="form-validator" />
+                    <input type="number" id="box2val9" placeholder="enter number" class="form-validator" />
+                </div>
             </div>
 
-            <div class="inner-box">
-                <input type="number" id="box1val7" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box1val8" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box1val9" placeholder="enter number" class="form-validator" />
-            </div>
-        </div>
 
+            <br>
+            <br>
 
+            <div class="box3">
+                <div class="inner-box">
+                    <input type="number" id="box3val1" value="0" />
+                    <input type="number" id="box3val2" value="0" />
+                    <input type="number" id="box3val3" value="0" />
+                </div>
 
-        <div class="box2">
-            <div class="inner-box">
-                <input type="number" id="box2val1" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box2val2" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box2val3" placeholder="enter number" class="form-validator" />
-            </div>
+                <div class="inner-box">
+                    <input type="number" id="box3val4" value="0" />
+                    <input type="number" id="box3val5" value="0" />
+                    <input type="number" id="box3val6" value="0" />
+                </div>
 
-            <div class="inner-box">
-                <input type="number" id="box2val4" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box2val5" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box2val6" placeholder="enter number" class="form-validator" />
-            </div>
-
-            <div class="inner-box">
-                <input type="number" id="box2val7" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box2val8" placeholder="enter number" class="form-validator" />
-                <input type="number" id="box2val9" placeholder="enter number" class="form-validator" />
-            </div>
-        </div>
-
-
-
-        <div class="box3">
-            <div class="inner-box">
-                <input type="number" id="box3val1" value="0" />
-                <input type="number" id="box3val2" value="0" />
-                <input type="number" id="box3val3" value="0" />
-            </div>
-
-            <div class="inner-box">
-                <input type="number" id="box3val4" value="0" />
-                <input type="number" id="box3val5" value="0" />
-                <input type="number" id="box3val6" value="0" />
-            </div>
-
-            <div class="inner-box">
-                <input type="number" id="box3val7" value="0" />
-                <input type="number" id="box3val8" value="0" />
-                <input type="number" id="box3val9" value="0" />
+                <div class="inner-box">
+                    <input type="number" id="box3val7" value="0" />
+                    <input type="number" id="box3val8" value="0" />
+                    <input type="number" id="box3val9" value="0" />
+                </div>
             </div>
         </div>
     </div>
 
     <hr />
-    <button onclick="addMatrix()"> Add</button>
-    <button onclick="subMatrix()">Substract</button>
-    <button onclick="multiplyMatrix()">Multiply</button>
+    <div class="container">
+        <button onclick="addMatrix()" class="btn"> Add</button>
+        <button onclick="subMatrix()" class="btn">Substract</button>
+        <button onclick="multiplyMatrix()" class="btn">Multiply</button>
+        <button onclick="divMatrix()" class="btn">Divide</button>
+    </div>
+    </div>
+
+
+
+
 
     <script src="app.js"></script>
 </body>

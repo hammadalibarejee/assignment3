@@ -174,3 +174,47 @@ const multiplyMatrix = () => {
     document.getElementById("box3val8").value = m3[2][1];
     document.getElementById("box3val9").value = m3[2][2];
 }
+const divMatrix = () => {
+    let m1 = [
+        [Number(m1One.value), Number(m1Two.value), Number(m1Three.value)],
+        [Number(m1Four.value), Number(m1Five.value), Number(m1Six.value)],
+        [Number(m1Seven.value), Number(m1Eight.value), Number(m1Nine.value)]
+    ];
+
+    let m2 = [
+        [Number(m2One.value), Number(m2Two.value), Number(m2Three.value)],
+        [Number(m2Four.value), Number(m2Five.value), Number(m2Six.value)],
+        [Number(m2Seven.value), Number(m2Eight.value), Number(m2Nine.value)]
+    ];
+
+    let m3 = [
+        [Number(m3One.value), Number(m3Two.value), Number(m3Three.value)],
+        [Number(m3Four.value), Number(m3Five.value), Number(m3Six.value)],
+        [Number(m3Seven.value), Number(m3Eight.value), Number(m3Nine.value)]
+    ];
+
+    console.log('Matrix 1: ', m1);
+    console.log('Matrix 2: ', m2);
+    console.log('Matrix 3: ', m3);
+
+    for (let i = 0; i < 3; i++) {
+        // console.log(i, 'i*');
+
+        for (j = 0; j < 3; j++) {
+            // console.log(j, 'j');
+  
+            m3[i][j] = m1[i][j] / m2[i][j];
+
+        }
+    }
+
+    document.getElementById("box3val1").value = m3[0][0];
+    document.getElementById("box3val2").value = m3[0][1];
+    document.getElementById("box3val3").value = m3[0][2];
+    document.getElementById("box3val4").value = m3[1][0];
+    document.getElementById("box3val5").value = m3[1][1];
+    document.getElementById("box3val6").value = m3[1][2];
+    document.getElementById("box3val7").value = m3[2][0];
+    document.getElementById("box3val8").value = m3[2][1];
+    document.getElementById("box3val9").value = m3[2][2];
+}
